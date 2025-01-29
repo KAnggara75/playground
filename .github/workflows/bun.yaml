@@ -1,0 +1,11 @@
+on: [push]
+
+jobs:
+  lcov:
+    runs-on: ubuntu-latest
+    name: Bun Lcov Test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: IDScript/DevOps/lcov@v0.0.2-5
+        with:
+          coverage-files: bun/coverage/lcov.info
