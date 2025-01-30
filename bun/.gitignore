@@ -29,7 +29,9 @@ _.seed
 
 lib-cov
 
-coverage/*.tmp
+coverage/*
+
+!coverage/*.info
 
 # nyc test coverage
 
