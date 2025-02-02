@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Spring Cloud Config Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/KAnggara75/playground
+          username: KAnggara75
+          password: KAnggara75
+          skipSslValidation: true
+          search-paths:
+            - "{profile}"
+  security:
+    user:
+      name: KAnggara75
+      password: KAnggara75
+
+server:
+  port: 8080
+
